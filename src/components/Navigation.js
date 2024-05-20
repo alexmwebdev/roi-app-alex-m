@@ -22,22 +22,22 @@ export default function App() {
       >
       <Tab.Screen name="Welcome" component={LandingPage}  options={{
       tabBarIcon: ({ color, size }) => (
-        <Ionicons name="home" color={colorred} size="25" />
+        <Ionicons name="home" color={colorred} size={25} />
       )
     }}/>
       <Tab.Screen name="People List" component={PeopleList} options={{
       tabBarIcon: ({ color, size }) => (
-        <Ionicons name="person-outline" color={colorred} size="25" />
+        <Ionicons name="person-outline" color={colorred} size={25} />
       )
     }}/>
       <Tab.Screen name="Add Person" component={AddPerson} options={{
       tabBarIcon: ({ color, size }) => (
-        <Ionicons name="person-add-outline" color={colorred} size="25" />
+        <Ionicons name="person-add-outline" color={colorred} size={25} />
       )
     }}/>
       <Tab.Screen name="Company List" component={CompanyList} options={{
       tabBarIcon: ({ color, size }) => (
-        <Ionicons name="list-outline" color={colorred} size="25" />
+        <Ionicons name="list-outline" color={colorred} size={25} />
       )
     }}/>
       </Tab.Navigator>
