@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ImageBackground, View, Text, StyleSheet, ScrollView, } from 'react-native';
+import { KeyboardAvoidingView, keyboardVerticalOffset, ImageBackground, View, Text, StyleSheet, ScrollView, } from 'react-native';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
@@ -9,8 +9,8 @@ import UpdatePerson from './UpdatePerson';
 const styles = StyleSheet.create({
     form: {
         flex: 1,
-        paddingTop: 50,
-        paddingBottom: 10,
+        paddingTop: 30,
+        paddingBottom: 40,
         paddingLeft: 20,
         paddingRight: 20,
         justifyContent: 'space-between',
@@ -78,12 +78,12 @@ class AddPerson extends Component {
         }
 
         return (
+            <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='10'>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                 <View style={styles.form}>
                     <Headline style={styles.headline}>Add a new contact</Headline>
                     <TextInput
-                        autoFocus={true}
                         style={styles.inputField}
                         label="First name"
                         value={this.state.firstName}
@@ -127,13 +127,14 @@ class AddPerson extends Component {
                     />                       
                     <View style={styles.addButton}>
                         <Button color={'white'} style={{backgroundColor: 'rgb(148,26,29)'}} mode="contained" onPress={this.onAddPress.bind(this)}>
-                            Add
+                            Add Contact
                         </Button>
                     </View>
                     
                 </View>
                 </ImageBackground>
             </ScrollView>
+            </KeyboardAvoidingView>
         )
     }
 }

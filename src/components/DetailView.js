@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Linking, View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
+import { Link, View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
 import { Button, Card, List } from 'react-native-paper';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
