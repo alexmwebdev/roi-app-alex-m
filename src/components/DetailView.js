@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
+import { Linking, View, StyleSheet, ScrollView, Text, Image, TouchableOpacity } from 'react-native';
 import { Button, Card, List } from 'react-native-paper';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
@@ -124,7 +124,9 @@ class DetailView extends Component {
         this.props.navigateToPeopleList()
                    
     }
-
+    constructor(props) {
+        super(props);
+      }
     render() {
 
         const {firstName, lastName, company, email, project, phone, notes} = this.props.person
@@ -177,17 +179,13 @@ class DetailView extends Component {
                     </View>
                     <View style={styles.actionButtonContainerRoot}>
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="phone" mode="contained" onPress={() => Linking.openURL('tel:'+{phone})}>
-                                Call
+                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="phone" mode="contained" onPress={() => Linking.openURL('tel:'+phone)}>
+                            Call
                             </Button>
                         </View>
+                        
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="email" mode="contained" onPress={() => Linking.openURL('mailto:'+{email})}>
-                                E-mail
-                            </Button>
-                        </View>
-                        <View style={styles.actionButtonContainer}>
-                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="message-alert" mode="contained" onPress={() => Linking.openURL('sms:'+{phone})}>
+                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="message-alert" mode="contained" onPress={() => Linking.openURL('sms:'+phone)}>
                                 SMS
                             </Button>
                         </View>

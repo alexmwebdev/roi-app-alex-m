@@ -11,7 +11,7 @@ const App = () => (
     <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
     <Headline style={styles.headline}>Welcome to the ROI App!</Headline>
       <Text style={styles.text}>
-          You can add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in.
+          You can add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in currently.
       </Text>
       
     </ImageBackground>
