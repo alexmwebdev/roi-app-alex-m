@@ -12,10 +12,13 @@ const logo = { url: "./Roilogo.png"}
 const App = () => (
   <View style={styles.container}>
     <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
-    <Headline style={styles.headline}>Welcome to the ROI Staff Contact App!</Headline>
+    <Headline style={styles.headline}>Welcome to the ROI App!</Headline>
       <Text style={styles.text}>
-          Select from the menu options below to add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in currently.
+          Use the below navigation to add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in currently.
       </Text>
+      <Button to="addperson" color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="phone" mode="contained">
+          Add New Contact
+          </Button> 
 
       
     </ImageBackground>
