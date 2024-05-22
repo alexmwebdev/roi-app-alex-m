@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { KeyboardAvoidingView, keyboardVerticalOffset, ImageBackground, View, Text, StyleSheet, ScrollView, } from 'react-native';
+import { KeyboardAvoidingView, ImageBackground, View, Text, StyleSheet, ScrollView, } from 'react-native';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
@@ -23,9 +23,11 @@ const styles = StyleSheet.create({
         margin: 2
     },
     headline: {
-        textAlign: 'center',
-        color: "rgb(255,255,255)",
-        marginBottom:30
+        color:"rgb(255,255,255)",
+        textAlign:"center",
+        fontFamily: "Trebuchet",
+        marginBottom:20,
+        marginTop:0
     },
     image: {
         flex:1

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ImageBackground, View, Text, StyleSheet, ScrollView } from 'react-native';
+import { KeyboardAvoidingView, ImageBackground, View, Text, StyleSheet, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import { TextInput, Button, Headline } from 'react-native-paper';
@@ -9,8 +9,8 @@ import { CurrentRenderContext } from '@react-navigation/native';
 const styles = StyleSheet.create({
     form: {
         flex: 1,
-        paddingTop: 50,
-        paddingBottom: 10,
+        paddingTop: 30,
+        paddingBottom: 40,
         paddingLeft: 20,
         paddingRight: 20,
         justifyContent: 'space-between',
@@ -78,6 +78,7 @@ class UpdatePerson extends Component {
 
     render() {
         return (
+            <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='10'>
             <ScrollView showsVerticalScrollIndicator={false}>
             <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                 <View style={styles.form}>
@@ -137,6 +138,7 @@ class UpdatePerson extends Component {
                 </View>
                 </ImageBackground>
             </ScrollView>
+            </KeyboardAvoidingView>
         )
     }    
 }

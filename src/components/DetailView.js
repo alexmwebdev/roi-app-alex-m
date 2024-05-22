@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         top: 10,
         left: 80,
         fontSize: 24,
+        fontFamily: 'Trebuchet'
     },
     title2: {
         top: 35,
@@ -84,13 +85,18 @@ const styles = StyleSheet.create({
     },
 
     personName: {
-        fontSize: 40,
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: 24,
+        fontFamily: 'Trebuchet',
+        marginTop:20
     },
     personCompany: {
-        fontSize: 30,
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: 18,
+        fontFamily: 'Trebuchet',
+        marginTop:10,
+        marginBottom:10
     },
     personMetaInfoContainer: {
         padding: 10

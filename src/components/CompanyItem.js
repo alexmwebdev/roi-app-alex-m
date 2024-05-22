@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 //import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Card, Title, Paragraph, Avatar } from 'react-native-paper';
+import { Headline, Card, Title, Paragraph, Avatar } from 'react-native-paper';
 
 const styles = StyleSheet.create({
     card: {
@@ -29,11 +29,25 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0)',
     },
     companyItemContainer: {
-        margin: 10
+        margin: 10,
     },
     employeeName: {
-        fontSize: 16,
-        margin: 2
+        fontSize: 18,
+        margin: 2,
+        fontFamily:'Trebuchet'
+    },
+    companyName: {
+        backgroundColor: 'grey',
+        fontFamily:'Trebuchet'
+    },
+    headline: {
+        color:"rgb(255,255,255)",
+        textAlign:"center",
+        fontFamily: "Trebuchet",
+        marginBottom:20,
+        marginTop:0,
+        fontSize:24,
+        fontWeight:'Bold'
     }
 });
 
@@ -43,7 +57,7 @@ const CompanyItem = (props) => {
               <Card>
               <Card.Title
                 title={props.companies.company}
-                left={(props) => <Avatar.Icon {...props} color={'white'} style={{backgroundColor: 'grey'}} icon="group" />}
+                left={(props) => <Avatar.Icon {...props} color={'white'} style={styles.companyName} icon="group" />}
                 />                  
                 <Card.Content>
                     {props.companies.names.map((name) => {
