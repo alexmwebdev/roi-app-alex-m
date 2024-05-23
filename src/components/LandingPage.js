@@ -1,12 +1,10 @@
 import React from "react";
 import { ImageBackground, StyleSheet, Text, Image, View } from "react-native";
 import { Headline, Button } from 'react-native-paper';
-import { Link, BrowserRouter, Route, Router, Routes, Switch } from "react-router-dom";
-import AddPerson from './AddPerson';
+
 
 const image = { uri: "../images/roi-background.png" };
 const logo = { url: "./Roilogo.png"}
-
 
 // missing image <Image source={require('./images/logo_example01.png')} />
 const App = () => (
@@ -16,9 +14,6 @@ const App = () => (
       <Text style={styles.text}>
           Use the below navigation to add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in currently.
       </Text>
-      <Button to="addperson" color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="phone" mode="contained">
-          Add New Contact
-          </Button> 
 
       
     </ImageBackground>

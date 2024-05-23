@@ -1,5 +1,4 @@
-import people from './people.json';
-import news from './news.json';
+import people from './news.json';
 
 const initialState = {
     people,

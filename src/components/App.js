@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   imagelogo: {
     width:100,
     height:57,
-    marginTop:50,
+    marginTop:70,
     marginBottom:50,
     justifyContent: "flex-start",
     alignItems: "center"
