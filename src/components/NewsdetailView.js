@@ -143,7 +143,7 @@ class NewsdetailView extends Component {
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View>
                     <Button textColor={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)', color: '#ffffff'}} icon="arrow-left" mode="text" onPress={() => noneSelected()}>
-                        Back
+                        Backs
                     </Button> 
                     </View>
                     <View>

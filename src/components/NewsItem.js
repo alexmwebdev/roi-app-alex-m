@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-n
 import { connect } from 'react-redux';
 //import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
+import { Ionicons } from '@expo/vector-icons';
 import { Card, Title, Paragraph, Avatar, IconButton } from 'react-native-paper';
 
 const styles = StyleSheet.create({
@@ -28,11 +29,15 @@ const styles = StyleSheet.create({
         color: 'white',
         backgroundColor: 'rgba(255,255,255,0)',
     },
+    text: {
+        paddingLeft:15,
+        paddingRight:15
+    }
 });
 
 const PeopleItem = (props) => {
     
-    const {firstName, lastName, company} = props.people
+    const {firstName, lastName, company, newstitle, author, content} = props.people
 
     const getAvatarLabel = (firstName, lastName) => {
 
@@ -40,16 +45,14 @@ const PeopleItem = (props) => {
     }
 
     return (
-        <TouchableWithoutFeedback 
-            onPress={() => props.selectPerson(props.people)}>
             <View>
                 <Card.Title
-                    title={`${firstName} ${lastName}`}
-                    subtitle={`${company}`}
-                    left={(props) => <Avatar.Text color={'white'} style={{backgroundColor: 'rgb(148,26,29)'}} size={24} {...props} label={getAvatarLabel(firstName, lastName)} />}
+                    title={`${newstitle}`}
+                    subtitle={`${author}`}
+                    left={(props) => <Ionicons name="newspaper-outline" color={'rgb(148,26,29)'} size={24} {...props} label={getAvatarLabel(firstName, lastName)} />}
                 />
+                <Text style={styles.text}>{content}</Text>
             </View>
-        </TouchableWithoutFeedback>
     )
 }
 

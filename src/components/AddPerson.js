@@ -71,7 +71,7 @@ class AddPerson extends Component {
             notes: ''
         })
 
-        this.props.navigation.navigate('People List');
+        this.props.navigation.navigate('Contacts');
     }
 
     render() {

@@ -36,7 +36,7 @@ export default function App() {
         <Ionicons name="person-add-outline" color={colorred} size={25} />
       )
     }}/>
-      <Tab.Screen name="Departments" component={CompanyList} options={{
+      <Tab.Screen name="Sections" component={CompanyList} options={{
       tabBarIcon: ({ color, size }) => (
         <Ionicons name="list-outline" color={colorred} size={25} />
       )
