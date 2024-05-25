@@ -22,10 +22,11 @@ const styles = StyleSheet.create({
         flex:1
     },
     headline: {
-        color:"rgb(255,255,255)",
+        color:"rgb(148,26,29)",
         textAlign:"center",
         fontFamily: "Trebuchet",
-        marginBottom:20
+        marginBottom:20,
+        fontWeight:'bold'
     }
 });
 
@@ -80,9 +81,9 @@ class UpdatePerson extends Component {
         return (
             <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='10'>
             <ScrollView showsVerticalScrollIndicator={false}>
-            <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                 <View style={styles.form}>
                     <Headline style={styles.headline}>Update contact</Headline>
+                    <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                     <TextInput
                         style={styles.inputField}
                         label="First name"
@@ -124,7 +125,8 @@ class UpdatePerson extends Component {
                         label="Notes"
                         value={this.state.notes}
                         onChangeText={value => this.formUpdate({ prop: 'notes', value})}
-                    />                       
+                    />        
+                    </ImageBackground>                 
                     <View style={styles.updateButton}>
                         <Button color={'white'} style={{backgroundColor: 'rgb(148,26,29)'}} mode="contained" onPress={this.onUpdatePress.bind(this)}>
                             Update
@@ -134,9 +136,8 @@ class UpdatePerson extends Component {
                         <Button color={'white'} style={{backgroundColor: 'rgb(38,38,38)'}} mode="contained" onPress={this.onCancelPress.bind(this)}>
                             Cancel
                         </Button>
-                    </View>                   
+                    </View>      
                 </View>
-                </ImageBackground>
             </ScrollView>
             </KeyboardAvoidingView>
         )
