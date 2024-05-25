@@ -34,11 +34,13 @@ const styles = StyleSheet.create({
     employeeName: {
         fontSize: 18,
         margin: 2,
-        fontFamily:'Trebuchet'
+        fontFamily:'Trebuchet',
+        color: 'rgb(38,38,38)',
     },
     companyName: {
-        backgroundColor: 'grey',
-        fontFamily:'Trebuchet'
+        backgroundColor: 'rgb(148,26,29)',
+        fontFamily:'Trebuchet',
+        fontWeight:"bold"
     },
     headline: {
         color:"rgb(255,255,255)",

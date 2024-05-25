@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
         color: 'white',
         backgroundColor: 'rgba(255,255,255,0)',
     },
+    text: {
+        color:'rgb(38,38,38)'
+    }
 });
 
 const PeopleItem = (props) => {
@@ -42,7 +45,7 @@ const PeopleItem = (props) => {
     return (
         <TouchableWithoutFeedback 
             onPress={() => props.selectPerson(props.people)}>
-            <View>
+            <View style={styles.text}>
                 <Card.Title
                     title={`${firstName} ${lastName}`}
                     subtitle={`${company}`}

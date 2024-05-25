@@ -9,14 +9,10 @@ const logo = { url: "./Roilogo.png"}
 // missing image <Image source={require('./images/logo_example01.png')} />
 const App = () => (
   <View style={styles.container}>
-    <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
-    <Headline style={styles.headline}>Welcome to the ROI App!</Headline>
+    <Headline style={styles.headline}>Welcome</Headline>
       <Text style={styles.text}>
-          Use the below navigation to add a new staff contact, view or edit an existing staff contact and view the departments that each staff contact is in currently.
+          Use the below navigation to add a new staff contact, view or edit an existing staff contact, view the departments that each staff contact is in currently, and keep up to date with the latest news and announcements from ROI.
       </Text>
-
-      
-    </ImageBackground>
   </View>
 );
 
@@ -31,7 +27,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'left',
-    color: "rgb(255,255,255)",
+    color: "rgb(38,38,38)",
     marginBottom:30,
     fontFamily: "Trebuchet",
     paddingTop:50,
@@ -41,10 +37,10 @@ const styles = StyleSheet.create({
 
   },
   headline: {
-    color: "rgb(255,255,255)",
+    color: "rgb(149,26,29)",
     fontSize: 30,
     fontWeight: "bold",
-    textAlign: "left",
+    textAlign: "center",
     fontFamily: "Trebuchet",
     paddingTop:50
   }

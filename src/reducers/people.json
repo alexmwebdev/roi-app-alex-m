@@ -7,10 +7,7 @@
         "phone": "02 9988 2211",
         "company": "Information Communications Technology",
         "project": "CRM project",
-        "notes": "This is a note",
-        "newstitle": "News 1",
-        "author": "John Smith",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in odio nec leo laoreet mollis. Donec tincidunt in enim a luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nisi quis quam posuere ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at sapien odio. Sed nec libero eu odio ultricies venenatis. Fusce dignissim libero id dolor venenatis, at faucibus nisi dignissim. Vivamus dictum porttitor elit non suscipit. Vestibulum in turpis non dui laoreet facilisis imperdiet eget odio. Aenean consequat eros a tincidunt maximus. Fusce sodales sapien in nisl dapibus, nec fermentum turpis hendrerit. Integer nulla erat, euismod vitae nisi non, dictum commodo orci. Sed est metus, mattis at odio sit amet, bibendum efficitur mauris. Nam mauris enim, feugiat et erat eu, tristique pharetra lectus. Mauris gravida pellentesque tempor."
+        "notes": "This is a note"
     },
     {
         "id": 2,
@@ -20,10 +17,7 @@
         "phone": "03 8899 2255",
         "company": "Finance",
         "project": "CRM project",
-        "notes": "This is a note",
-        "newstitle": "News 2",
-        "author": "Sue White",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in odio nec leo laoreet mollis. Donec tincidunt in enim a luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nisi quis quam posuere ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at sapien odio. Sed nec libero eu odio ultricies venenatis. Fusce dignissim libero id dolor venenatis, at faucibus nisi dignissim. Vivamus dictum porttitor elit non suscipit. Vestibulum in turpis non dui laoreet facilisis imperdiet eget odio. Aenean consequat eros a tincidunt maximus. Fusce sodales sapien in nisl dapibus, nec fermentum turpis hendrerit. Integer nulla erat, euismod vitae nisi non, dictum commodo orci. Sed est metus, mattis at odio sit amet, bibendum efficitur mauris. Nam mauris enim, feugiat et erat eu, tristique pharetra lectus. Mauris gravida pellentesque tempor."
+        "notes": "This is a note"
     },
     {
         "id": 3,
@@ -33,10 +27,7 @@
         "phone": "05 7788 2255",
         "company": "Marketing",
         "project": "CRM project",
-        "notes": "This is a note",
-        "newstitle": "News 3",
-        "author": "Bob O'Bits",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in odio nec leo laoreet mollis. Donec tincidunt in enim a luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nisi quis quam posuere ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at sapien odio. Sed nec libero eu odio ultricies venenatis. Fusce dignissim libero id dolor venenatis, at faucibus nisi dignissim. Vivamus dictum porttitor elit non suscipit. Vestibulum in turpis non dui laoreet facilisis imperdiet eget odio. Aenean consequat eros a tincidunt maximus. Fusce sodales sapien in nisl dapibus, nec fermentum turpis hendrerit. Integer nulla erat, euismod vitae nisi non, dictum commodo orci. Sed est metus, mattis at odio sit amet, bibendum efficitur mauris. Nam mauris enim, feugiat et erat eu, tristique pharetra lectus. Mauris gravida pellentesque tempor."
+        "notes": "This is a note"
     },
     {
         "id": 4,
@@ -46,10 +37,7 @@
         "phone": "06 4455 9988",
         "company": "Finance",
         "project": "CRM project",
-        "notes": "This is a note",
-        "newstitle": "News 4",
-        "author": "Mary Blue",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in odio nec leo laoreet mollis. Donec tincidunt in enim a luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nisi quis quam posuere ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at sapien odio. Sed nec libero eu odio ultricies venenatis. Fusce dignissim libero id dolor venenatis, at faucibus nisi dignissim. Vivamus dictum porttitor elit non suscipit. Vestibulum in turpis non dui laoreet facilisis imperdiet eget odio. Aenean consequat eros a tincidunt maximus. Fusce sodales sapien in nisl dapibus, nec fermentum turpis hendrerit. Integer nulla erat, euismod vitae nisi non, dictum commodo orci. Sed est metus, mattis at odio sit amet, bibendum efficitur mauris. Nam mauris enim, feugiat et erat eu, tristique pharetra lectus. Mauris gravida pellentesque tempor."
+        "notes": "This is a note"
     },
     {
         "id": 5,
@@ -59,9 +47,6 @@
         "phone": "02 9988 1122",
         "company": "Marketing",
         "project": "CRM project",
-        "notes": "This is a note",
-        "newstitle": "News 5",
-        "author": "Mick Green",
-        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in odio nec leo laoreet mollis. Donec tincidunt in enim a luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum nisi quis quam posuere ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at sapien odio. Sed nec libero eu odio ultricies venenatis. Fusce dignissim libero id dolor venenatis, at faucibus nisi dignissim. Vivamus dictum porttitor elit non suscipit. Vestibulum in turpis non dui laoreet facilisis imperdiet eget odio. Aenean consequat eros a tincidunt maximus. Fusce sodales sapien in nisl dapibus, nec fermentum turpis hendrerit. Integer nulla erat, euismod vitae nisi non, dictum commodo orci. Sed est metus, mattis at odio sit amet, bibendum efficitur mauris. Nam mauris enim, feugiat et erat eu, tristique pharetra lectus. Mauris gravida pellentesque tempor."
+        "notes": "This is a note"
     }
 ]

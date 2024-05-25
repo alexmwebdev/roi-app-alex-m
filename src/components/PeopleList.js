@@ -33,7 +33,7 @@ class PeopleList extends Component {
 
         if (this.props.detailView === true) {
             return (
-                <PeopleDetail navigateToPeopleList={()=>this.props.navigation.navigate("People List")}
+                <PeopleDetail navigateToPeopleList={()=>this.props.navigation.navigate("Contacts")}
                               navigateToAddPerson={()=>this.props.navigation.navigate("Add Person")}
                 />
             )

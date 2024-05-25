@@ -20,11 +20,13 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     inputField: {
-        margin: 2
+        margin: 2,
+        color:"rgb(148,26,29)"
     },
     headline: {
-        color:"rgb(255,255,255)",
+        color:"rgb(148,26,29)",
         textAlign:"center",
+        fontWeight:"bold",
         fontFamily: "Trebuchet",
         marginBottom:20,
         marginTop:0
@@ -76,15 +78,15 @@ class AddPerson extends Component {
 
     render() {
         if(this.props.toUpdate) {
-            return <UpdatePerson backToPeopleList={() => this.props.navigation.navigate("People List")}/>
+            return <UpdatePerson backToPeopleList={() => this.props.navigation.navigate("Contacts")}/>
         }
 
         return (
             <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='10'>
-            <ScrollView showsVerticalScrollIndicator={false}>
-                <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
+            <ScrollView showsVerticalScrollIndicator={true}>
                 <View style={styles.form}>
                     <Headline style={styles.headline}>Add a new contact</Headline>
+                    <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                     <TextInput
                         style={styles.inputField}
                         label="First name"
@@ -126,7 +128,8 @@ class AddPerson extends Component {
                         label="Notes"
                         value={this.state.notes}
                         onChangeText={value => this.formUpdate({ prop: 'notes', value})}
-                    />                       
+                    />
+                    </ImageBackground>                
                     <View style={styles.addButton}>
                         <Button color={'white'} style={{backgroundColor: 'rgb(148,26,29)'}} mode="contained" onPress={this.onAddPress.bind(this)}>
                             Add Contact
@@ -134,7 +137,6 @@ class AddPerson extends Component {
                     </View>
                     
                 </View>
-                </ImageBackground>
             </ScrollView>
             </KeyboardAvoidingView>
         )

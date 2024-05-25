@@ -6,7 +6,7 @@ import CompanyList from './CompanyList';
 import AddPerson from './AddPerson';
 import PeopleList from './PeopleList';
 import LandingPage from './LandingPage';
-import NewsList from './NewsList';
+import NewsPage from './NewsPage';
 
 const Tab = createMaterialBottomTabNavigator();
 const colorred = 'rgb(148,26,29)'
@@ -15,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="People List"
+        initialRouteName="Contacts"
         activeColor={colorred}
         inactiveColor="#000000"
         size="20"
@@ -36,12 +36,12 @@ export default function App() {
         <Ionicons name="person-add-outline" color={colorred} size={25} />
       )
     }}/>
-      <Tab.Screen name="Sections" component={CompanyList} options={{
+      <Tab.Screen name="Department" component={CompanyList} options={{
       tabBarIcon: ({ color, size }) => (
         <Ionicons name="list-outline" color={colorred} size={25} />
       )
     }}/>
-    <Tab.Screen name="News" component={NewsList} options={{
+    <Tab.Screen name="News" component={NewsPage} options={{
       tabBarIcon: ({ color, size }) => (
         <Ionicons name="newspaper-outline" color={colorred} size={25} />
       )
