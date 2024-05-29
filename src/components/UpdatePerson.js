@@ -36,7 +36,7 @@ class UpdatePerson extends Component {
         firstName: this.props.person.firstName,
         lastName: this.props.person.lastName,
         phone: this.props.person.phone,
-        email: this.props.person.email,
+        address: this.props.person.address,
         company: this.props.person.company,
         project: this.props.person.project,
         notes: this.props.person.notes,
@@ -54,15 +54,15 @@ class UpdatePerson extends Component {
     }
 
     onUpdatePress() {
-        const { firstName, lastName, phone, email, company, project, notes, id } = this.state;
+        const { firstName, lastName, phone, address, company, project, notes, id } = this.state;
 
-        this.props.updatePersonData({ firstName, lastName, phone, email, company, project, notes, id});
+        this.props.updatePersonData({ firstName, lastName, phone, address, company, project, notes, id});
 
         this.setState({
             firstName: '',
             lastName: '',
             phone: '',
-            email: '',
+            address: '',
             company: '',
             project: '',
             notes: '',
@@ -79,7 +79,7 @@ class UpdatePerson extends Component {
 
     render() {
         return (
-            <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='10'>
+            <KeyboardAvoidingView behavior='position' keyboardVerticalOffset='-10'>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.form}>
                     <Headline style={styles.headline}>Update contact</Headline>
@@ -104,9 +104,9 @@ class UpdatePerson extends Component {
                     />                    
                     <TextInput
                         style={styles.inputField}
-                        label="Email"
-                        value={this.state.phone}
-                        onChangeText={value => this.formUpdate({ prop: 'email', value})}
+                        label="Address"
+                        value={this.state.address}
+                        onChangeText={value => this.formUpdate({ prop: 'address', value})}
                     />                    
                     <TextInput
                         style={styles.inputField}

@@ -135,14 +135,14 @@ class DetailView extends Component {
       }
     render() {
 
-        const {firstName, lastName, company, email, project, phone, notes} = this.props.person
+        const {firstName, lastName, company, address, project, phone, notes} = this.props.person
         const {noneSelected, toUpdate} = this.props
 
         return (
             <View>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View>
-                    <Button textColor={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)', color: '#ffffff'}} icon="arrow-left" mode="text" onPress={() => noneSelected()}>
+                    <Button textColor={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)', color: '#ffffff', marginLeft:20, marginRight:20}} icon="arrow-left" mode="text" onPress={() => noneSelected()}>
                         Back
                     </Button> 
                     </View>
@@ -162,9 +162,9 @@ class DetailView extends Component {
                             left={props => <List.Icon {...props} icon="phone" />}
                             />
                             <List.Item
-                                title="E-Mail"
-                                description={email}
-                                left={props => <List.Icon {...props} icon="email" color={'grey'}/>}
+                                title="Address"
+                                description={address}
+                                left={props => <List.Icon {...props} icon="map" color={'grey'}/>}
                             />
                             <List.Item
                                 title="Project"

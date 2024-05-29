@@ -15,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Contacts"
+        initialRouteName="Home"
         activeColor={colorred}
         inactiveColor="#000000"
         size="20"

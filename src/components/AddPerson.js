@@ -42,7 +42,7 @@ class AddPerson extends Component {
         firstName: '',
         lastName: '',
         phone: '',
-        email: '',
+        address: '',
         company: '',
         project: '',
         notes: ''
@@ -59,15 +59,15 @@ class AddPerson extends Component {
     }
 
     onAddPress() {
-        const { firstName, lastName, phone, email, company, project, notes } = this.state;
+        const { firstName, lastName, phone, address, company, project, notes } = this.state;
 
-        this.props.addPerson({ firstName, lastName, phone, email, company, project, notes});
+        this.props.addPerson({ firstName, lastName, phone, address, company, project, notes});
 
         this.setState({
             firstName: '',
             lastName: '',
             phone: '',
-            email: '',
+            address: '',
             company: '',
             project: '',
             notes: ''
@@ -107,9 +107,9 @@ class AddPerson extends Component {
                     />                    
                     <TextInput
                         style={styles.inputField}
-                        label="Email"
-                        value={this.state.email}
-                        onChangeText={value => this.formUpdate({ prop: 'email', value})}
+                        label="Address"
+                        value={this.state.address}
+                        onChangeText={value => this.formUpdate({ prop: 'address', value})}
                     />                    
                     <TextInput
                         style={styles.inputField}
