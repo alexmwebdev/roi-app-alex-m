@@ -11,7 +11,7 @@ const App = () => (
   <View style={styles.container}>
     <Headline style={styles.headline}>Welcome</Headline>
       <Text style={styles.text}>
-          Use the below navigation to add a new staff contact, view or edit an existing staff contact, view the departments that each staff contact is in currently, and keep up to date with the latest news and announcements from ROI.
+          Use the below navigation to view all staff contacts of ROI, add a new staff contact, view or edit an existing staff contact, view the departments that each staff contact is in currently, and keep up to date with the latest news and announcements from ROI.
       </Text>
   </View>
 );
