@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ImageBackground, View, StyleSheet, FlatList } from 'react-native';
+import { ImageBackground, View, StyleSheet, FlatList, Text } from 'react-native';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 import Icon from 'react-native-vector-icons/EvilIcons';
@@ -8,14 +8,18 @@ import CompanyItem from './CompanyItem';
 const styles = StyleSheet.create({
     image: {
         flex:1
+      },
+      menutext: {
+
       }
 });
 
 class CompanyList extends Component {
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
-            <Icon name={'archive'} size={50} color={tintColor} />
-        )
+            <Icon name={'archive'} size={20} color={tintColor} />
+        ),
+        tabBarLabel: <Text style={styles.menutext}>News</Text>
     }
     render() {
         return (

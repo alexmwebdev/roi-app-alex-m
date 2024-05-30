@@ -6,7 +6,6 @@
         "address" : "1 Code Lane, Javaville, NSW, 0100, Australia",
         "phone": "02 9988 2211",
         "company": "Information Communications Technology",
-        "project": "CRM project",
         "notes": "This is a note"
     },
     {
@@ -16,7 +15,6 @@
         "address": "16 Bit Way, Byte Cove, QLD, 1101, Australia",
         "phone": "03 8899 2255",
         "company": "Finance",
-        "project": "CRM project",
         "notes": "This is a note"
     },
     {
@@ -26,7 +24,6 @@
         "address": "8 Silicon Road, Cloud Hills, VIC, 1001, Australia",
         "phone": "05 7788 2255",
         "company": "Marketing",
-        "project": "CRM project",
         "notes": "This is a note"
     },
     {
@@ -36,7 +33,6 @@
         "address": "4 Processor Boulevard, Appletson, NT, 1010, Australia",
         "phone": "06 4455 9988",
         "company": "Finance",
-        "project": "CRM project",
         "notes": "This is a note"
     },
     {
@@ -46,7 +42,6 @@
         "address": "700 Bandwidth Street, Bufferland, NSW, 0110, Australia",
         "phone": "02 9988 1122",
         "company": "Marketing",
-        "project": "CRM project",
         "notes": "This is a note"
     }
 ]

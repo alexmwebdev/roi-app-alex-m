@@ -38,7 +38,6 @@ class UpdatePerson extends Component {
         phone: this.props.person.phone,
         address: this.props.person.address,
         company: this.props.person.company,
-        project: this.props.person.project,
         notes: this.props.person.notes,
         id: this.props.person.id
     }
@@ -54,9 +53,9 @@ class UpdatePerson extends Component {
     }
 
     onUpdatePress() {
-        const { firstName, lastName, phone, address, company, project, notes, id } = this.state;
+        const { firstName, lastName, phone, address, company, notes, id } = this.state;
 
-        this.props.updatePersonData({ firstName, lastName, phone, address, company, project, notes, id});
+        this.props.updatePersonData({ firstName, lastName, phone, address, company, notes, id});
 
         this.setState({
             firstName: '',
@@ -64,7 +63,6 @@ class UpdatePerson extends Component {
             phone: '',
             address: '',
             company: '',
-            project: '',
             notes: '',
             id: ''
         })
@@ -110,16 +108,11 @@ class UpdatePerson extends Component {
                     />                    
                     <TextInput
                         style={styles.inputField}
-                        label="Company"
+                        label="Department"
                         value={this.state.company}
                         onChangeText={value => this.formUpdate({ prop: 'company', value})}
                     />                    
-                    <TextInput
-                        style={styles.inputField}
-                        label="Project"
-                        value={this.state.project}
-                        onChangeText={value => this.formUpdate({ prop: 'project', value})}
-                    />                    
+                                       
                     <TextInput
                         style={styles.inputField}
                         label="Notes"

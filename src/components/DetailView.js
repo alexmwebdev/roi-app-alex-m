@@ -166,11 +166,7 @@ class DetailView extends Component {
                                 description={address}
                                 left={props => <List.Icon {...props} icon="map" color={'grey'}/>}
                             />
-                            <List.Item
-                                title="Project"
-                                description={project}
-                                left={props => <List.Icon {...props} icon="clipboard-text" color={'grey'}/>}
-                            />                                                
+                                                                           
                             <List.Item
                                 title="Notes"
                                 description={notes}
