@@ -17,17 +17,19 @@ const styles = StyleSheet.create({
     },
    
     addButton: {
-        marginTop: 20
+        marginTop: 20,
+        fontFamily:'Trebuchet'
     },
     inputField: {
         margin: 2,
-        color:"rgb(148,26,29)"
+        color:"rgb(148,26,29)",
+        fontFamily:'Trebuchet'
     },
     headline: {
         color:"rgb(148,26,29)",
         textAlign:"center",
         fontWeight:"bold",
-        fontFamily: "Trebuchet",
+        fontFamily: "Trebuchet Bold",
         marginBottom:20,
         marginTop:0
     },
@@ -124,7 +126,7 @@ class AddPerson extends Component {
                     />
                     </ImageBackground>                
                     <View style={styles.addButton}>
-                        <Button color={'white'} style={{backgroundColor: 'rgb(148,26,29)'}} mode="contained" onPress={this.onAddPress.bind(this)}>
+                        <Button color={'white'} style={{backgroundColor: 'rgb(148,26,29)', fontFamily:'Trebuchet'}} mode="contained" onPress={this.onAddPress.bind(this)}>
                             Add Contact
                         </Button>
                     </View>

@@ -8,7 +8,10 @@ import CompanyItem from './CompanyItem';
 const styles = StyleSheet.create({
     image: {
         flex:1
-      }
+      },
+      text: {
+        fontFamily: "Trebuchet"
+    }
 });
 
 class CompanyList extends Component {
@@ -22,7 +25,7 @@ class CompanyList extends Component {
             <ImageBackground source={require('../images/roi-background.png')} resizeMode="cover" style={styles.image}>
                 <View>
                     <FlatList
-                        data={this.props.companies}
+                        data={this.props.companies} style={styles.text}
                         renderItem={({item}) => <CompanyItem companies={item} />}
                         keyExtractor={(item, index) => index.toString()}
                     />

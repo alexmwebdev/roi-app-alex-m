@@ -14,7 +14,8 @@ const colorred = 'rgb(148,26,29)'
 
 const styles = StyleSheet.create({
   menutext: {
-    fontSize:11
+    fontSize:11,
+    fontFamily:'Trebuchet',
   }
 })
 

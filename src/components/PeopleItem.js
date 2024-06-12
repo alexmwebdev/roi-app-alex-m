@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         top: 20,
         left: 80,
         fontSize: 24,
+        fontFamily:'Trebuchet Bold'
     },
     image: {
         height: 100,
@@ -29,7 +30,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0)',
     },
     text: {
-        color:'rgb(38,38,38)'
+        color:'rgb(38,38,38)',
+        fontFamily:'Trebuchet'
     }
 });
 

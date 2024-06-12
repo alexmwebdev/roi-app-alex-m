@@ -2,7 +2,6 @@ import React from "react";
 import { ScrollView, ImageBackground, StyleSheet, Text, Image, View } from "react-native";
 import { Headline, Button } from 'react-native-paper';
 
-
 const image = { uri: "../images/roi-background.png" };
 const logo = { url: "./Roilogo.png"}
 
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
-    fontFamily: "Trebuchet",
+    fontFamily: "Trebuchet Bold",
     paddingTop:50
   },
   newstitle: {
@@ -84,7 +83,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
-    fontFamily: "Trebuchet",
+    fontFamily: "Trebuchet Bold",
     paddingTop:20
   }
 });

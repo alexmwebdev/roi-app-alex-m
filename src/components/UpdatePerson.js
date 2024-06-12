@@ -24,9 +24,12 @@ const styles = StyleSheet.create({
     headline: {
         color:"rgb(148,26,29)",
         textAlign:"center",
-        fontFamily: "Trebuchet",
+        fontFamily: "Trebuchet Bold",
         marginBottom:20,
         fontWeight:'bold'
+    },
+    inputField: {
+        fontFamily: "Trebuchet"
     }
 });
 

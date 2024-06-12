@@ -2,6 +2,14 @@
   "expo": {
     "name": "roi-app",
     "slug": "roi-app",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./src/fonts/trebuchet.ttf"]
+        }
+      ]
+    ]
   }
 }

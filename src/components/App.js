@@ -14,30 +14,31 @@ import reducers from '../reducers/PeopleReducer';
 import Navigation from './Navigation';
 import { Appbar } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
+import { useFonts } from 'expo-font';
 const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-
 /*
 type Props = {};
 export default class App extends Component<Props> {
 
 */
-export default class App extends React.Component {
-  render() {
-    return (
-      <SafeAreaProvider>
-      <Provider store={store}>
-        <Appbar.Header style={styles.appheader}>
-          <Image
-          source={require('../images/roi-logo.png')}
-          style={styles.imagelogo}
-      />
-        </Appbar.Header>
-        <Navigation />
-      </Provider>
-      </SafeAreaProvider>
-    );
-  }
+export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Trebuchet': require('../components/fonts/trebuchet.ttf'),
+    'Trebuchet Bold': require('../components/fonts/trebuchetbold.ttf'),
+  });
+  return (
+    <SafeAreaProvider>
+    <Provider store={store}>
+      <Appbar.Header style={styles.appheader}>
+        <Image
+        source={require('../images/roi-logo.png')}
+        style={styles.imagelogo}
+    />
+      </Appbar.Header>
+      <Navigation />
+    </Provider>
+    </SafeAreaProvider>
+  );
 }
 
 const styles = StyleSheet.create({

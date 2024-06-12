@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         top: 10,
         left: 80,
         fontSize: 24,
-        fontFamily: 'Trebuchet'
+        fontFamily: 'Trebuchet Bold'
     },
     title2: {
         top: 35,
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingTop: 10,
         width: 260,
+        fontFamily: "Trebuchet"
     },
     textIcons: {
         color: '#26a69a',
@@ -175,19 +176,19 @@ class DetailView extends Component {
                             </Card.Content>
                             <Card.Actions style={styles.editDeleteButtonsContainer}>
                                 <Button color={'grey'} onPress={this.onDeletePress.bind(this)}>Delete</Button>
-                                <Button style={{backgroundColor: 'rgb(38,38,38)'}} color={'#ffffff'} onPress={this.onEditPress.bind(this)}>Edit</Button>
+                                <Button style={{backgroundColor: 'rgb(38,38,38)', fontFamily: "Trebuchet"}} color={'#ffffff'} onPress={this.onEditPress.bind(this)}>Edit</Button>
                             </Card.Actions>
                         </Card>
                     </View>
                     <View style={styles.actionButtonContainerRoot}>
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="phone" mode="contained" onPress={() => Linking.openURL('tel:'+phone)}>
+                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)', fontFamily: "Trebuchet"}} icon="phone" mode="contained" onPress={() => Linking.openURL('tel:'+phone)}>
                             Call
                             </Button>
                         </View>
                         
                         <View style={styles.actionButtonContainer}>
-                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)'}} icon="message-alert" mode="contained" onPress={() => Linking.openURL('sms:'+phone)}>
+                            <Button color={'#ffffff'} style={{backgroundColor: 'rgb(148,26,29)', fontFamily: "Trebuchet"}} icon="message-alert" mode="contained" onPress={() => Linking.openURL('sms:'+phone)}>
                                 SMS
                             </Button>
                         </View>

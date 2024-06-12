@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         top: 20,
         left: 100,
         fontSize: 24,
+        fontFamily:'Trebuchet Bold'
     },
     image: {
         height: 100,
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     headline: {
         color:"rgb(255,255,255)",
         textAlign:"center",
-        fontFamily: "Trebuchet",
+        fontFamily: "Trebuchet Bold",
         marginBottom:20,
         marginTop:0,
         fontSize:24,

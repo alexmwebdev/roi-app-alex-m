@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
         flex:1
     },
     text: {
-        color:"rgb(255,255,255)"
+        color:"rgb(255,255,255)",
+        fontFamily:'Trebuchet',
     }
 });
 
